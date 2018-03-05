@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ticket_manage.ui'
+#
+# Created by: PyQt5 UI code generator 5.9
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_TicketManagerForm(object):
+    def setupUi(self, TicketManagerForm):
+        TicketManagerForm.setObjectName("TicketManagerForm")
+        TicketManagerForm.resize(601, 489)
+        self.gridLayout = QtWidgets.QGridLayout(TicketManagerForm)
+        self.gridLayout.setContentsMargins(30, 30, 30, 30)
+        self.gridLayout.setObjectName("gridLayout")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setContentsMargins(-1, -1, -1, 35)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label = QtWidgets.QLabel(TicketManagerForm)
+        font = QtGui.QFont()
+        font.setFamily("幼圆")
+        font.setPointSize(28)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.horizontalLayout_2.addWidget(self.label)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.gridLayout.addLayout(self.horizontalLayout_2, 0, 0, 1, 1)
+        self.tickettable = QtWidgets.QTableWidget(TicketManagerForm)
+        self.tickettable.setAlternatingRowColors(True)
+        self.tickettable.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        self.tickettable.setRowCount(10)
+        self.tickettable.setObjectName("tickettable")
+        self.tickettable.setColumnCount(6)
+        item = QtWidgets.QTableWidgetItem()
+        self.tickettable.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tickettable.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tickettable.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tickettable.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tickettable.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tickettable.setHorizontalHeaderItem(5, item)
+        self.tickettable.horizontalHeader().setStretchLastSection(True)
+        self.tickettable.verticalHeader().setVisible(False)
+        self.gridLayout.addWidget(self.tickettable, 2, 0, 1, 1)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem1)
+        self.updateButton = QtWidgets.QPushButton(TicketManagerForm)
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑")
+        font.setPointSize(12)
+        self.updateButton.setFont(font)
+        self.updateButton.setObjectName("updateButton")
+        self.horizontalLayout.addWidget(self.updateButton)
+        self.delButton = QtWidgets.QPushButton(TicketManagerForm)
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑")
+        font.setPointSize(12)
+        self.delButton.setFont(font)
+        self.delButton.setObjectName("delButton")
+        self.horizontalLayout.addWidget(self.delButton)
+        self.gridLayout.addLayout(self.horizontalLayout, 3, 0, 1, 1)
+
+        self.retranslateUi(TicketManagerForm)
+        QtCore.QMetaObject.connectSlotsByName(TicketManagerForm)
+
+    def retranslateUi(self, TicketManagerForm):
+        _translate = QtCore.QCoreApplication.translate
+        TicketManagerForm.setWindowTitle(_translate("TicketManagerForm", "Form"))
+        self.label.setText(_translate("TicketManagerForm", "订票管理"))
+        item = self.tickettable.horizontalHeaderItem(0)
+        item.setText(_translate("TicketManagerForm", "旅客姓名"))
+        item = self.tickettable.horizontalHeaderItem(1)
+        item.setText(_translate("TicketManagerForm", "航班号"))
+        item = self.tickettable.horizontalHeaderItem(2)
+        item.setText(_translate("TicketManagerForm", "出发地"))
+        item = self.tickettable.horizontalHeaderItem(3)
+        item.setText(_translate("TicketManagerForm", "目的地"))
+        item = self.tickettable.horizontalHeaderItem(4)
+        item.setText(_translate("TicketManagerForm", "舱位"))
+        item = self.tickettable.horizontalHeaderItem(5)
+        item.setText(_translate("TicketManagerForm", "身份证号"))
+        self.updateButton.setText(_translate("TicketManagerForm", "修改记录"))
+        self.delButton.setText(_translate("TicketManagerForm", "删除记录"))
+
