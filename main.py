@@ -4,23 +4,23 @@ import sys
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QStackedWidget, QTableWidgetItem, QPushButton, \
     QMessageBox, QHeaderView
-from select_main import Ui_SelMainWindow
-from login import Ui_LoginForm
-from register import Ui_RegisterForm
-from check_in_Form import Ui_checkinForm
-from user_main import Ui_UserMainWindow
-from admin_main import Ui_AdminMainWindow
-from flight_search import Ui_Form
-from flight_manage import Ui_FlightManagerForm
-from seat_table import Ui_SeatForm
-from passenger import Ui_PassengerForm
-from new_passenger import Ui_New_Pa_Form
-from refund import Ui_RefundForm
-from ticket import Ui_TicketForm
-from flight_information import Ui_FlightInfomationForm
-from ticket_manage import Ui_TicketManagerForm
-from book_passenger import Ui_BookPassengerForm
-from ticket_information import Ui_TicketInformationForm
+from interface.select_main import Ui_SelMainWindow
+from interface.login import Ui_LoginForm
+from interface.register import Ui_RegisterForm
+from interface.check_in_Form import Ui_checkinForm
+from interface.user_main import Ui_UserMainWindow
+from interface.admin_main import Ui_AdminMainWindow
+from interface.flight_search import Ui_Form
+from interface.flight_manage import Ui_FlightManagerForm
+from interface.seat_table import Ui_SeatForm
+from interface.passenger import Ui_PassengerForm
+from interface.new_passenger import Ui_New_Pa_Form
+from interface.refund import Ui_RefundForm
+from interface.ticket import Ui_TicketForm
+from interface.flight_information import Ui_FlightInfomationForm
+from interface.ticket_manage import Ui_TicketManagerForm
+from interface.book_passenger import Ui_BookPassengerForm
+from interface.ticket_information import Ui_TicketInformationForm
 import pyodbc
 
 # 连接数据库
@@ -28,7 +28,7 @@ cnxn = pyodbc.connect('DRIVER={SQL Server};'
                       'SERVER=localhost;'
                       'DATABASE=BookFlight;'
                       'UID=sa;'
-                      'PWD=zhanxin')
+                      'PWD=yourpassword')
 cursor = cnxn.cursor()
 
 
